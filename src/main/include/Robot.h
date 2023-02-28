@@ -33,8 +33,8 @@ class Robot : public frc::TimedRobot {
   frc::PWMVictorSPX rightMotor2{3};
 
   // Both motor pairs
-  frc::DifferentialDrive motorPair1{m_leftMotor1, m_rightMotor1};
-  frc::DifferentialDrive motorPair2{m_leftMotor2, m_rightMotor2};
+  frc::DifferentialDrive motorPair1{leftMotor1, rightMotor1};
+  frc::DifferentialDrive motorPair2{leftMotor2, rightMotor2};
 
   frc::Timer timer{};
   frc::XboxController controller{0};
